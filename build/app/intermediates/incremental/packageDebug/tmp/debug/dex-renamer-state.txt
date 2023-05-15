@@ -1,4 +1,0 @@
-#Mon May 15 13:31:37 VET 2023
-base.0=/home/hector/proyectos/rick-and-morty-app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
