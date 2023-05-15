@@ -20,4 +20,4 @@ Pequeña aplicación desarrollada en Flutter sobre la serie animada "Rick and Mo
 
 ## ✍️ Autor
 
-- Hector Montilla
+- Hector R. Montilla C.
