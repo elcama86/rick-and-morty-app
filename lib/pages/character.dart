@@ -56,11 +56,12 @@ class _CharacterState extends State<Character> with GlobalUtils {
         CharacterResponse characters = CharacterResponse.fromJson(data);
         results = characters.results;
       }
-
-      setState(() {
-        searchResults = results;
-        isSearching = false;
-      });
+      if (mounted) {
+        setState(() {
+          searchResults = results;
+          isSearching = false;
+        });
+      }
     });
   }
 

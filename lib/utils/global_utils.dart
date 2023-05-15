@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 
 class GlobalUtils {
   int getCurrentPage(String url) {
@@ -14,13 +15,13 @@ class GlobalUtils {
       return response.data;
     } on DioError catch (e) {
       if (e.response != null) {
-        print('Dio error!');
-        print('STATUS: ${e.response?.statusCode}');
-        print('DATA: ${e.response?.data}');
-        print('HEADERS: ${e.response?.headers}');
+        debugPrint('Dio error!');
+        debugPrint('STATUS: ${e.response?.statusCode}');
+        debugPrint('DATA: ${e.response?.data}');
+        debugPrint('HEADERS: ${e.response?.headers}');
       } else {
-        print('Error sending request!');
-        print(e.message);
+        debugPrint('Error sending request!');
+        debugPrint(e.message);
       }
     }
   }
